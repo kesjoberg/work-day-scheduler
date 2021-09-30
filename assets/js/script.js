@@ -23,11 +23,14 @@ function setColors() {
     }
   })
 }
+
+//Setting the date in the header
 function setDate(){
   var date = moment().format('dddd, MMMM Do, YYYY');
   $("#currentDay").append(date);
 }
 
+// Saving any entered events to local storage.
 function enterEvent() {
   $('.saveBtn').on('click',function(){
     allTheNotes = [];   
@@ -42,6 +45,7 @@ function enterEvent() {
   fillEvents()
 }
 
+//Fills the events either from local storage so that the event persists
 function fillEvents() {
   var currentIndex = 0
   $('input').each( function () {
