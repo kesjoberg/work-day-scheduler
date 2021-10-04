@@ -27,7 +27,7 @@ function setColors() {
 //Setting the date in the header
 function setDate(){
   var date = moment().format('dddd, MMMM Do, YYYY');
-  $("#currentDay").append(date);
+  $("#currentDay").appendChild(date);
 }
 
 // Saving any entered events to local storage.
